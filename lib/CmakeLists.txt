@@ -2,7 +2,5 @@ project(object_tracker)
 
 add_library(object_tracker object_tracker.h object_tracker.cpp structures.h)
 
-SET(OpenCV_DIR C:/opencv/build/)
-find_package(OpenCV REQUIRED)
 
 target_link_libraries(object_tracker ${OpenCV_LIBS})
